@@ -35,6 +35,7 @@ interface Analytics {
 
   class GoogleAnalytics implements Analytics {
     private final Tracker tracker;
+    private static int DUMB_VALUE;
 
     public GoogleAnalytics(Tracker tracker) {
       this.tracker = tracker;
